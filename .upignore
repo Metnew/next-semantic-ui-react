@@ -1,0 +1,9 @@
+!.next
+.node_modules
+
+./components
+./pages
+./store
+./static
+./styles
+./postcss.config.js

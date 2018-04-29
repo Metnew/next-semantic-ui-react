@@ -1,0 +1,12 @@
+{
+	"name": "next-suir",
+	"profile": "default",
+	"regions": ["eu-central-1"],
+	"hooks": {
+		"build": ["npm run build", "mv node_modules .node_modules", "npm install --production"],
+		"clean": "[ -d .node_modules ] && rm -rf node_modules && mv .node_modules node_modules"
+	},
+	"lambda": {
+		"memory": 3008
+	}
+}
