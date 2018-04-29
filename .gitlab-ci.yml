@@ -1,0 +1,54 @@
+image: alpine:latest
+
+variables:
+  AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+
+stages:
+  - build
+  - test
+  - staging
+  - production
+
+before_script:
+  - apk add -U curl tar gzip bash git python py-pip nodejs nodejs-npm
+  - curl -sf https://up.apex.sh/install | sh
+  - pip install awscli --upgrade --user
+  - export PATH=~/.local/bin:$PATH # Required for awscli.
+  - aws --version  # Print out aws cli version for debugging.
+  - npm install
+  - export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+  - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+
+test:
+  stage: test
+  image: gliderlabs/herokuish:latest
+  before_script:
+    - echo "Run test!"
+  script:
+    - cp -R . /tmp/app
+    - /bin/herokuish buildpack test
+  only:
+    - branches
+
+staging:
+  stage: staging
+  script:
+    - up deploy staging
+  environment:
+    name: staging
+    url: https://staging.mydomain.co
+  only:
+    refs:
+      - develop
+
+production:
+  stage: production
+  script:
+    - up deploy production
+  environment:
+    name: production
+    url: https://www.mydomain.co
+  only:
+    refs:
+      - master
