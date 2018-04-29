@@ -13,8 +13,7 @@
     - [Author](#author)
 
 
-Demo (deployed with now): https://next-suir.now.sh
-Demo (deployed with up): 
+**Demo: https://next-suir.now.sh**
 
 ## Quickstart
 
@@ -34,7 +33,8 @@ Demo (deployed with up):
     # Deploy with `now`:
     now
     # Deploy with `up`:
-    up deploy staging
+    up 
+    # apex/up only: Don't forget to set `assetPrefix: "/staging"` in `next.config.js`, if you deploy to staging environment without custom domain.
 ```
 
 ## Environment variables
