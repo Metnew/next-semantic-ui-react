@@ -1,0 +1,9 @@
+{
+	"name": "Next-Suir",
+	"short_name": "next_suir",
+	"description": "https://github.com/Metnew/next-semantic-ui-react",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#f7f7f7",
+	"theme_color": "#009688"
+}
