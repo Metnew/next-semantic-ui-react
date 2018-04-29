@@ -9,6 +9,7 @@
 		"@zeit/next-sass": "^0.1.2",
 		"@zeit/next-source-maps": "0.0.2",
 		"babel-polyfill": "^6.26.0",
+		"cross-env": "^5.1.4",
 		"isomorphic-fetch": "^2.2.1",
 		"lodash": "^4.17.10",
 		"next": "^5.1.0",
@@ -46,7 +47,6 @@
 		"babel-register": "6.26.0",
 		"babel-runtime": "^6.26.0",
 		"caniuse-lite": "^1.0.30000832",
-		"cross-env": "^5.1.4",
 		"css-loader": "^0.28.11",
 		"eslint": "^4.19.1",
 		"eslint-config-standard": "^11.0.0",
@@ -93,21 +93,9 @@
 		"type": "git",
 		"url": "git+https://github.com/Metnew/next-semantic-ui-react.git"
 	},
-	"keywords": [
-		"react",
-		"redux",
-		"react-redux",
-		"next.js",
-		"next",
-		"semantic-ui",
-		"semantic-ui-react"
-	],
+	"keywords": ["react", "redux", "react-redux", "next.js", "next", "semantic-ui", "semantic-ui-react"],
 	"bugs": {
 		"url": "https://github.com/Metnew/next-semantic-ui-react/issues"
 	},
-	"homepage": "https://github.com/Metnew/next-semantic-ui-react#readme",
-	"moduleRoots": [
-		"./src/common",
-		"./src"
-	]
+	"homepage": "https://github.com/Metnew/next-semantic-ui-react#readme"
 }
