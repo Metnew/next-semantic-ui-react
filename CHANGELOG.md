@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.0.2"></a>
+## [0.0.2](https://github.com/Metnew/next-semantic-ui-react/compare/v0.0.1...v0.0.2) (2018-04-29)
+
+
+### Bug Fixes
+
+* **package:** move cross-env to deps for `up` compability ([0e83be0](https://github.com/Metnew/next-semantic-ui-react/commit/0e83be0))
+
+
+
 <a name="0.0.1"></a>
 ## 0.0.1 (2018-04-29)
 
