@@ -1,0 +1,56 @@
+{
+	"plugins": [
+		[
+			"lodash",
+			{
+				"id": ["lodash"]
+			}
+		],
+		"syntax-dynamic-import",
+		[
+			"babel-plugin-styled-components",
+			{
+				"ssr": true
+			}
+		],
+		[
+			"module-resolver",
+			{
+				"root": ["./"],
+				"alias": {
+					"components": "./components",
+					"pages": "./pages",
+					"store": "./store",
+					"static": "./static",
+					"styles": "./styles"
+				},
+				"extensions": [".js", ".jsx", ".json"]
+			}
+		]
+	],
+	"presets": [
+		"next/babel",
+		[
+			"env",
+			{
+				"targets": {
+					"browsers": ["ie 10", "last 2 versions"]
+				}
+			}
+		],
+		"stage-0",
+		"react",
+		"flow"
+	],
+	"env": {
+		"production": {
+			"presets": ["react-optimize"]
+		},
+		"development": {
+			"plugins": ["dynamic-import-node"]
+		},
+		"test": {
+			"plugins": ["dynamic-import-node"]
+		}
+	}
+}
