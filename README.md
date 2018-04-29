@@ -33,7 +33,8 @@
     now
     # Deploy with `up`:
     up 
-    # apex/up only: Don't forget to set `assetPrefix: "/staging"` in `next.config.js`, if you deploy to staging environment without custom domain.
+    # apex/up only: Don't forget to set `assetPrefix: "/staging"` in `next.config.js`, 
+    # If you deploy to staging environment without custom domain.
 ```
 
 ## Environment variables
