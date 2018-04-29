@@ -1,7 +1,7 @@
 # Next-Semantic.UI-React
 
 - [Next-Semantic.UI-React](#next-semanticui-react)
-    - [Quickstart](#quick-start)
+    - [Quickstart](#quickstart)
     - [Environment variables](#environment-variables)
     - [Dependencies](#dependencies)
         - [Client:](#client)
@@ -10,6 +10,7 @@
         - [Static assets](#static-assets)
         - [Theming](#theming)
         - [Serverless + `up`](#serverless-up)
+        - [Deploy](#deploy)
     - [Author](#author)
 
 
@@ -53,7 +54,7 @@
 
 ### Webpack
 
-* Babel: `stage-0` and few known plugins.
+* Babel: `stage-0`, `flow`, `module-resolver`, other widely used plugins.
 * **[optimize-js-plugin](https://github.com/vigneshshanmugam/optimize-js-plugin)**
 * **[wepback-assets-manifest](https://www.npmjs.com/package/webpack-assets-manifest)**
 
@@ -62,11 +63,11 @@
 
 ## FAQ
 
-### Static assets?
+### Static assets
 
 `/static` folder + `url-loader`.
 
-### Theming?
+### Theming
 
 Yes, with `styled-components'` `<ThemeProvider>` it's possible to specify a color theme.
 
