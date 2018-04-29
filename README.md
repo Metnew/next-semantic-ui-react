@@ -19,8 +19,8 @@
 
 ```bash
     # Install
-    git clone --depth=1 --single-branch https://github.com/Metnew/suicrux.git
-    cd suicrux
+    git clone --depth=1 --single-branch https://github.com/Metnew/next-semantic-ui-react.git
+    cd next-semantic-ui-react
     npm install
     # install flow typings for libraries (optional)
     flow-typed install
