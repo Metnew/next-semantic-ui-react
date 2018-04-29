@@ -1,6 +1,6 @@
 {
   "name": "next-suir",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/client/index.jsx",
   "description": "Next.js + React-Semantic.UI",
   "dependencies": {
